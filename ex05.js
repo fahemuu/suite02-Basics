@@ -14,5 +14,13 @@
 
     Fonctions interdites:
         - Array.indexOf
-
 */
+function searchOcc(arr, occurence) {
+    var taille = arr.length;
+    for (var i = 0; i < taille; i++) {
+        if (arr[i] == occurence) {
+            return i;
+        }
+    }
+    return -1;
+}
