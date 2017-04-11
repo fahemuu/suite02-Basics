@@ -20,5 +20,4 @@
 function editArrayAt(arr, position, value) {
 
     arr[position] = value;
-    console.log(arr);
 }
