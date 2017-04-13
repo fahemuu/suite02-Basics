@@ -18,3 +18,17 @@
     Attention, la fonction ne doit pas modifier le tableau modèle.
 
 */
+function getValuesByType(arr, type) {
+    //on sauvegarde la taille du tableau
+    var taille = arr.length;
+    var arr1 = new Array;
+
+
+    for (var i = 0; i < taille; i++) {
+        if (typeof (arr[i]) === type) {
+            console.log(i)
+            arr1.push(arr[i]);
+        }
+    }
+    return arr1;
+}
