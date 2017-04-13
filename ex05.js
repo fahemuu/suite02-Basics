@@ -23,4 +23,10 @@ function searchOcc(arr, occurence) {
         }
     }
     return -1;
+    
 }
+
+
+
+
+
