@@ -15,5 +15,27 @@
 
     Fonctions interdites:
         - String.split
-
 */
+function splitStr(str, occurence) {
+    var i = 0,
+        len = str.length,
+        s = "";
+    var arr = new Array;
+
+    while (i < len) {
+        if (str[i] != occurence) {
+            s = s + str[i];
+
+        }
+        else {
+            arr.push(s);
+            s = ""
+        }
+        i++;
+
+        console.log(s)
+    }
+    arr.push(s);
+
+    return arr;
+}
